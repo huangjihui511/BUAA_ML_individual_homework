@@ -1,0 +1,151 @@
+|---tag: FIRST
+|   division: relationship
+|   |---tag: Husband
+|   |   division: education
+|   |   |---tag: HS-grad
+|   |   |   division: capital-gain >? 5013.0
+|   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |---tag: neg -----class: income > 50K
+|   |   |---tag: Prof-school -----class: income > 50K
+|   |   |---tag: Bachelors -----class: income > 50K
+|   |   |---tag: Some-college
+|   |   |   division: capital-gain >? 5013.0
+|   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |---tag: neg
+|   |   |   |   division: occupation
+|   |   |   |   |---tag: Adm-clerical -----class: income > 50K
+|   |   |   |   |---tag: Craft-repair -----class: income > 50K
+|   |   |   |   |---tag: ? -----class: income > 50K
+|   |   |   |   |---tag: Sales -----class: income > 50K
+|   |   |   |   |---tag: Exec-managerial -----class: income > 50K
+|   |   |   |   |---tag: Handlers-cleaners
+|   |   |   |   |   division: workclass
+|   |   |   |   |   |---tag: Federal-gov -----class: income > 50K
+|   |   |   |   |   |---tag: Private -----class: income <= 50K
+|   |   |   |   |   |---tag: Self-emp-not-inc -----class: income > 50K
+|   |   |   |   |---tag: Transport-moving -----class: income > 50K
+|   |   |   |   |---tag: Protective-serv -----class: income > 50K
+|   |   |   |   |---tag: Machine-op-inspct -----class: income > 50K
+|   |   |   |   |---tag: Tech-support -----class: income > 50K
+|   |   |   |   |---tag: Prof-specialty -----class: income > 50K
+|   |   |   |   |---tag: Other-service -----class: income <= 50K
+|   |   |   |   |---tag: Farming-fishing
+|   |   |   |   |   division: workclass
+|   |   |   |   |   |---tag: Private -----class: income > 50K
+|   |   |   |   |   |---tag: Self-emp-not-inc -----class: income <= 50K
+|   |   |   |   |   |---tag: Self-emp-inc -----class: income > 50K
+|   |   |   |   |   |---tag: State-gov -----class: income <= 50K
+|   |   |---tag: Doctorate -----class: income > 50K
+|   |   |---tag: 12th
+|   |   |   division: occupation
+|   |   |   |---tag: Adm-clerical -----class: income <= 50K
+|   |   |   |---tag: Craft-repair -----class: income > 50K
+|   |   |   |---tag: Machine-op-inspct -----class: income <= 50K
+|   |   |   |---tag: Transport-moving -----class: income <= 50K
+|   |   |   |---tag: Sales -----class: income > 50K
+|   |   |   |---tag: Protective-serv -----class: income <= 50K
+|   |   |   |---tag: Exec-managerial -----class: income <= 50K
+|   |   |   |---tag: ? -----class: income <= 50K
+|   |   |   |---tag: Prof-specialty -----class: income > 50K
+|   |   |   |---tag: Handlers-cleaners -----class: income > 50K
+|   |   |---tag: 10th
+|   |   |   division: occupation
+|   |   |   |---tag: Transport-moving
+|   |   |   |   division: age >? 31.0
+|   |   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |   |---tag: neg -----class: income <= 50K
+|   |   |   |---tag: Machine-op-inspct -----class: income <= 50K
+|   |   |   |---tag: Sales -----class: income <= 50K
+|   |   |   |---tag: Craft-repair -----class: income <= 50K
+|   |   |   |---tag: Adm-clerical -----class: income <= 50K
+|   |   |   |---tag: Other-service -----class: income <= 50K
+|   |   |   |---tag: Exec-managerial -----class: income > 50K
+|   |   |   |---tag: Handlers-cleaners -----class: income <= 50K
+|   |   |   |---tag: Farming-fishing -----class: income <= 50K
+|   |   |   |---tag: ? -----class: income <= 50K
+|   |   |---tag: 7th-8th -----class: income <= 50K
+|   |   |---tag: Masters -----class: income > 50K
+|   |   |---tag: Assoc-acdm -----class: income > 50K
+|   |   |---tag: Assoc-voc -----class: income > 50K
+|   |   |---tag: 11th -----class: income <= 50K
+|   |   |---tag: 5th-6th -----class: income <= 50K
+|   |   |---tag: 1st-4th -----class: income <= 50K
+|   |   |---tag: 9th -----class: income <= 50K
+|   |   |---tag: Preschool -----class: income <= 50K
+|   |---tag: Wife
+|   |   division: education
+|   |   |---tag: Masters -----class: income > 50K
+|   |   |---tag: Some-college
+|   |   |   division: occupation
+|   |   |   |---tag: Exec-managerial -----class: income > 50K
+|   |   |   |---tag: Adm-clerical -----class: income > 50K
+|   |   |   |---tag: Sales -----class: income > 50K
+|   |   |   |---tag: Other-service -----class: income <= 50K
+|   |   |   |---tag: Prof-specialty -----class: income > 50K
+|   |   |   |---tag: Tech-support -----class: income > 50K
+|   |   |   |---tag: ?
+|   |   |   |   division: race
+|   |   |   |   |---tag: White -----class: income > 50K
+|   |   |   |   |---tag: Black -----class: income <= 50K
+|   |   |   |---tag: Transport-moving -----class: income <= 50K
+|   |   |   |---tag: Machine-op-inspct -----class: income > 50K
+|   |   |   |---tag: Protective-serv -----class: income > 50K
+|   |   |   |---tag: Craft-repair -----class: income > 50K
+|   |   |---tag: Assoc-acdm -----class: income > 50K
+|   |   |---tag: HS-grad
+|   |   |   division: occupation
+|   |   |   |---tag: Other-service -----class: income <= 50K
+|   |   |   |---tag: Adm-clerical -----class: income > 50K
+|   |   |   |---tag: Machine-op-inspct -----class: income <= 50K
+|   |   |   |---tag: Sales
+|   |   |   |   division: workclass
+|   |   |   |   |---tag: Private -----class: income <= 50K
+|   |   |   |   |---tag: Self-emp-not-inc -----class: income > 50K
+|   |   |   |   |---tag: Self-emp-inc -----class: income > 50K
+|   |   |   |   |---tag: Federal-gov -----class: income > 50K
+|   |   |   |---tag: Exec-managerial -----class: income > 50K
+|   |   |   |---tag: Prof-specialty -----class: income > 50K
+|   |   |   |---tag: ? -----class: income > 50K
+|   |   |   |---tag: Farming-fishing -----class: income <= 50K
+|   |   |   |---tag: Craft-repair -----class: income > 50K
+|   |   |   |---tag: Tech-support -----class: income > 50K
+|   |   |   |---tag: Transport-moving -----class: income <= 50K
+|   |   |   |---tag: Handlers-cleaners -----class: income <= 50K
+|   |   |   |---tag: Priv-house-serv -----class: income <= 50K
+|   |   |---tag: Assoc-voc -----class: income > 50K
+|   |   |---tag: Bachelors -----class: income > 50K
+|   |   |---tag: Doctorate -----class: income > 50K
+|   |   |---tag: 5th-6th -----class: income <= 50K
+|   |   |---tag: 12th -----class: income <= 50K
+|   |   |---tag: Prof-school -----class: income > 50K
+|   |   |---tag: 10th -----class: income > 50K
+|   |   |---tag: 9th -----class: income <= 50K
+|   |   |---tag: 11th -----class: income <= 50K
+|   |   |---tag: 7th-8th -----class: income <= 50K
+|   |---tag: Not-in-family
+|   |   division: capital-gain >? 6849.0
+|   |   |---tag: pos -----class: income > 50K
+|   |   |---tag: neg
+|   |   |   division: education
+|   |   |   |---tag: HS-grad -----class: income <= 50K
+|   |   |   |---tag: 12th -----class: income <= 50K
+|   |   |   |---tag: 1st-4th -----class: income <= 50K
+|   |   |   |---tag: Assoc-acdm -----class: income <= 50K
+|   |   |   |---tag: 10th -----class: income <= 50K
+|   |   |   |---tag: Assoc-voc -----class: income <= 50K
+|   |   |   |---tag: Bachelors -----class: income <= 50K
+|   |   |   |---tag: Some-college -----class: income <= 50K
+|   |   |   |---tag: Masters -----class: income <= 50K
+|   |   |   |---tag: 11th -----class: income <= 50K
+|   |   |   |---tag: 9th -----class: income <= 50K
+|   |   |   |---tag: Doctorate -----class: income > 50K
+|   |   |   |---tag: Prof-school -----class: income > 50K
+|   |   |   |---tag: 7th-8th -----class: income <= 50K
+|   |   |   |---tag: 5th-6th -----class: income <= 50K
+|   |   |   |---tag: Preschool -----class: income <= 50K
+|   |---tag: Own-child
+|   |   division: capital-gain >? 4601.5
+|   |   |---tag: pos -----class: income > 50K
+|   |   |---tag: neg -----class: income <= 50K
+|   |---tag: Other-relative -----class: income <= 50K
+|   |---tag: Unmarried -----class: income <= 50K

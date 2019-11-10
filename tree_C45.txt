@@ -1,0 +1,124 @@
+|---tag: FIRST
+|   division: capital-gain >? 5013.0
+|   |---tag: pos -----class: income > 50K
+|   |---tag: neg
+|   |   division: age >? 27.0
+|   |   |---tag: pos
+|   |   |   division: marital-status
+|   |   |   |---tag: Married-civ-spouse
+|   |   |   |   division: education-num >? 10.0
+|   |   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |   |---tag: neg
+|   |   |   |   |   division: capital-loss >? 1740.0
+|   |   |   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |   |   |---tag: neg
+|   |   |   |   |   |   division: hours-per-week >? 36.0
+|   |   |   |   |   |   |---tag: pos
+|   |   |   |   |   |   |   division: native-country
+|   |   |   |   |   |   |   |---tag: United-States
+|   |   |   |   |   |   |   |   division: education
+|   |   |   |   |   |   |   |   |---tag: HS-grad
+|   |   |   |   |   |   |   |   |   division: race
+|   |   |   |   |   |   |   |   |   |---tag: White -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Amer-Indian-Eskimo -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Black
+|   |   |   |   |   |   |   |   |   |   division: workclass
+|   |   |   |   |   |   |   |   |   |   |---tag: Private -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Self-emp-not-inc -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Federal-gov -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Local-gov -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: State-gov -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Self-emp-inc -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Other -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Asian-Pac-Islander -----class: income > 50K
+|   |   |   |   |   |   |   |   |---tag: Some-college
+|   |   |   |   |   |   |   |   |   division: occupation
+|   |   |   |   |   |   |   |   |   |---tag: Adm-clerical -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Craft-repair -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: ? -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Exec-managerial -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Handlers-cleaners -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Sales -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Protective-serv -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Machine-op-inspct -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Prof-specialty -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Transport-moving -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Other-service -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |---tag: Tech-support -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |---tag: Farming-fishing
+|   |   |   |   |   |   |   |   |   |   division: workclass
+|   |   |   |   |   |   |   |   |   |   |---tag: Private -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Self-emp-not-inc -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Self-emp-inc -----class: income > 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: State-gov -----class: income <= 50K
+|   |   |   |   |   |   |   |   |   |   |---tag: Without-pay -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 12th -----class: income > 50K
+|   |   |   |   |   |   |   |   |---tag: 10th -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 7th-8th -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 9th -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 5th-6th -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 11th -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: 1st-4th -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Mexico -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Germany -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: ? -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Philippines -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Japan -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Thailand -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Poland -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Cuba -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: China -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Hong -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Italy -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Puerto-Rico -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Laos -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Canada -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Vietnam -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: India -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: England -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Dominican-Republic -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: El-Salvador -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: South -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Portugal -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Yugoslavia -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Greece -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Cambodia -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Jamaica -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Ecuador -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Nicaragua -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Haiti -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Columbia -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Scotland -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: France -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Iran -----class: income > 50K
+|   |   |   |   |   |   |   |---tag: Taiwan -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Trinadad&Tobago -----class: income > 50K
+|   |   |   |   |   |   |---tag: neg
+|   |   |   |   |   |   |   division: sex
+|   |   |   |   |   |   |   |---tag: Male -----class: income <= 50K
+|   |   |   |   |   |   |   |---tag: Female
+|   |   |   |   |   |   |   |   division: race
+|   |   |   |   |   |   |   |   |---tag: White -----class: income <= 50K
+|   |   |   |   |   |   |   |   |---tag: Asian-Pac-Islander -----class: income > 50K
+|   |   |   |   |   |   |   |   |---tag: Black -----class: income <= 50K
+|   |   |   |---tag: Never-married -----class: income <= 50K
+|   |   |   |---tag: Divorced -----class: income <= 50K
+|   |   |   |---tag: Widowed -----class: income <= 50K
+|   |   |   |---tag: Married-spouse-absent
+|   |   |   |   division: capital-loss >? 1269.0
+|   |   |   |   |---tag: pos -----class: income > 50K
+|   |   |   |   |---tag: neg
+|   |   |   |   |   division: workclass
+|   |   |   |   |   |---tag: Private -----class: income <= 50K
+|   |   |   |   |   |---tag: ? -----class: income <= 50K
+|   |   |   |   |   |---tag: Federal-gov -----class: income <= 50K
+|   |   |   |   |   |---tag: Local-gov -----class: income <= 50K
+|   |   |   |   |   |---tag: Self-emp-not-inc -----class: income > 50K
+|   |   |   |   |   |---tag: State-gov -----class: income <= 50K
+|   |   |   |   |   |---tag: Self-emp-inc -----class: income <= 50K
+|   |   |   |---tag: Separated
+|   |   |   |   division: education-num >? 9.0
+|   |   |   |   |---tag: pos -----class: income <= 50K
+|   |   |   |   |---tag: neg -----class: income <= 50K
+|   |   |   |---tag: Married-AF-spouse -----class: income > 50K
+|   |   |---tag: neg -----class: income <= 50K
